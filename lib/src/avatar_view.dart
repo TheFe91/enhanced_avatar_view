@@ -29,7 +29,7 @@ class AvatarView extends StatelessWidget {
 
   const AvatarView({
     Key? key,
-    this.avatarType = AvatarType.CIRCLE,
+    this.avatarType = AvatarType.circle,
     this.isOnlyText = false,
     this.radius = 50,
     this.borderWidth = 0,
@@ -48,7 +48,7 @@ class AvatarView extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-      child: avatarType == AvatarType.CIRCLE
+      child: avatarType == AvatarType.circle
           ? CircularWidget(
               backgroundColor: backgroundColor,
               borderColor: borderColor,
@@ -60,6 +60,7 @@ class AvatarView extends StatelessWidget {
               foregroundColor: foregroundColor,
               text: text,
               isOnlyText: isOnlyText,
+              headers: headers,
             )
           : RectangularWidget(
               backgroundColor: backgroundColor,
@@ -72,12 +73,13 @@ class AvatarView extends StatelessWidget {
               foregroundColor: foregroundColor,
               text: text,
               isOnlyText: isOnlyText,
+              headers: headers,
             ),
     );
   }
 }
 
 enum AvatarType {
-  CIRCLE,
-  RECTANGLE,
+  circle,
+  rectangle,
 }

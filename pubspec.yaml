@@ -1,6 +1,6 @@
 name: enhanced_avatar_view
-description: A new Flutter package project.
-version: 1.0.0
+description: The enhanced version of avatar_view, supporting headers in Http calls and entirely stateless
+version: 1.0.1
 homepage: https://github.com/TheFe91/flutter_avatar_view
 
 environment:
